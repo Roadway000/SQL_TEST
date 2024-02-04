@@ -16,4 +16,4 @@ from (
 			group by pw.project_id
 		) pws on pws.project_id = p.id
 	)T
-order by 2 desc
+order by 2 desc;

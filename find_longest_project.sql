@@ -13,4 +13,4 @@ where Month_count in (
 	select	max(cast((strftime('%m',  finish_date) + 12*strftime('%Y', finish_date)) -
 		(strftime('%m',  start_date) + 12*strftime('%Y', start_date)) as integer)) [Month_count]
 	from project
-	)
+	);

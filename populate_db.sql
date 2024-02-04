@@ -21,15 +21,15 @@ insert into worker (id, name, birthday, level) values
 ,(10,'George W. Bush','1993-03-22','Trainee')
 ,(11,'Barack Obama','1994-04-11','Senior')
 ,(12,'Donald J. Trump','1999-05-19','Junior')
-,(13,'Joseph R. Biden','2001-06-30','Trainee')
+,(13,'Joseph R. Biden','2001-06-30','Trainee');
 
-update worker set salary = 900 where level = 'Trainee'
-update worker set salary = 1900 where level = 'Junior'
-update worker set salary = 3500 where level = 'Middle'
-update worker set salary = 4900 where level = 'Senior'
+update worker set salary = 900 where level = 'Trainee';
+update worker set salary = 1900 where level = 'Junior';
+update worker set salary = 3500 where level = 'Middle';
+update worker set salary = 4900 where level = 'Senior';
 
 
-insert into client (id, name) values (1,'Boston Consulting Group'), (2,'ADOBE'), (3, 'Instacart'), (4,'Uber'), (5, 'WorkDay'), (6,'AT&T'), (7,'Informatica'), (8,'Trustwave'), (9,'IBM')
+insert into client (id, name) values (1,'Boston Consulting Group'), (2,'ADOBE'), (3, 'Instacart'), (4,'Uber'), (5, 'WorkDay'), (6,'AT&T'), (7,'Informatica'), (8,'Trustwave'), (9,'IBM');
 
 insert into project (id, client_id, start_date, finish_date) values
 (1, 1,'2016-08-02 14:23:00','2016-12-10 15:23:00'),
@@ -51,7 +51,7 @@ insert into project (id, client_id, start_date, finish_date) values
 (17,4,'2019-05-16 15:15:00','2019-06-24 05:15:00'),
 (18,7,'2019-07-28 10:03:00','2019-11-05 10:03:00'),
 (20,8,'2019-12-09 15:15:00','2020-03-18 05:15:00'),
-(21,9,'2020-02-07 16:39:00','2020-08-17 19:39:00')
+(21,9,'2020-02-07 16:39:00','2020-08-17 19:39:00');
 
 
 insert into project_worker(project_id, worker_id)  values
@@ -62,6 +62,6 @@ insert into project_worker(project_id, worker_id)  values
 (13,11),(12,4),(13,10),(14,4),(14,5),(14,6),(14,12),(15,7),(15,8),
 (16,1),(16,2),(16,3),(17,4),(16,11),(17,9),(17,6),(18,5),(18,10),
 (18,9),(18,12),(18,13),(19,1),(19,4),(19,2),(19,3),(20,8),(20,7),
-(20,9),(21,5),(21,6),(21,11),(21,13)
+(20,9),(21,5),(21,6),(21,11),(21,13);
 
 

@@ -7,4 +7,4 @@ from worker w
 				select 'YOUNGEST'[type], max(birthday)[birthday] from worker
 				union
 				select 'ELDEST'[type], min(birthday)[birthday] from worker
-				)t on t.birthday = w.birthday
+				)t on t.birthday = w.birthday;
